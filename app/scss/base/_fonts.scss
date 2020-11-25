@@ -1,0 +1,7 @@
+@import "../abstracts/mixins";
+
+@include font-face("PlayfairDisplay", "..app/fonts/PlayfairDisplay-Regular", 400);
+@include font-face("PlayfairDisplay", "../fonts/PlayfairDisplay-Bold", 700);
+
+
+@include font-face("icomoon", "../fonts/icomoon/icomoon");
