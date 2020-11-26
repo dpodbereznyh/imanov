@@ -305,7 +305,7 @@
 /*****About*****/
 .about {
   display: flex;
-  background: url(../img/about/about-horse.png) no-repeat calc(50% + 691px) /auto 411px;
+  background: url(../img/about/about-horse.png) no-repeat right/auto 411px;
   &__image {
     width: 50%;
     height: auto;
@@ -358,6 +358,11 @@
     padding: 32px 0 0 80px;
   }
 }
+@media screen and (max-width: 1500.5px) {
+  .about {
+    background: none;
+  }
+}
 @media screen and (max-width: 1170.5px) {
   .about__description {
     padding: 32px 0 0 50px;
@@ -396,7 +401,7 @@
 /*****Experience*****/
 .experience {
   display: flex;
-  background: url(../img/experience/experience-horse.png) no-repeat calc(50% - 700px)/auto 300px;
+  background: url(../img/experience/experience-horse.png) no-repeat left/auto 300px;
   &__image {
     width: 50%;
     height: auto;
@@ -452,6 +457,11 @@
       color: $default_d1;
       transition: .35s;
     }
+  }
+}
+@media screen and (max-width: 1500.5px) {
+  .experience {
+    background: none;
   }
 }
 @include desktop {
@@ -578,6 +588,7 @@
   }
   &__copyright {
     color: $dark;
+    text-transform: uppercase;
   }
   &__developer {
     color: $dark;
