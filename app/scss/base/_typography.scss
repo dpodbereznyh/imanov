@@ -59,3 +59,8 @@ $font-family: "PlayfairDisplay", sans-serif;
   font-size: 12px;
   line-height: 16px;
 }
+@include tablet {
+  .h1 {
+    font-size: 26px;
+  }
+}

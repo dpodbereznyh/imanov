@@ -14,10 +14,101 @@
 <body>
 
 <header class="header">
-    
+    <div class="container-fluid">
+        <div class="header__wrap">
+            <nav class="main-nav" role="navigation">
+                <input id="main-menu-state" type="checkbox" />
+                <label class="main-menu-btn" for="main-menu-state">
+                  <span class="main-menu-btn-icon"></span> Toggle main menu visibility
+                </label>          
+                <ul id="main-menu" class="sm sm-clean">
+                    <li>
+                        <a href="#" class="h4">
+                            Услуги 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="h4">
+                            Обо мне 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="h4">
+                            Контакты 
+                        </a>
+                    </li>
+                </ul>
+              </nav>
+              <ul class="header__contacts_list">
+                  <li class="header__contacts_item">
+                      <div class="header__contacts_item_icon">
+                          <img src="img/header/header-phone-icon.svg" alt="">
+                      </div>
+                      <a href="tel:+79876543210" class="header__contacts_item_data h4">+7 987 654 32 10</a>
+                  </li>
+                  <li class="header__contacts_item">
+                      <div class="header__contacts_item_icon">
+                          <img src="img/header/header-envelope-icon.svg" alt="">
+                      </div>
+                      <a href="mailto:info@imanov.ru" class="header__contacts_item_data h4">info@imanov.ru</a>
+                  </li>
+              </ul>
+        </div>
+        <h1 class="header__title">
+            ИП ИМАНОВ -<br>ВАШ ГИД В КОННОЙ<br>ИНДУСТРИИ
+        </h1>
+        <a href="#" class="header__btn h5">СВЯЗАТЬСЯ СО МНОЙ</a>
+    </div>
 </header>
 <main class="main">
-
+    <section class="section service">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="section__title h1 service__title">
+                        ПРЕДОСТАВЛЯЕМЫЕ УСЛУГИ
+                    </h2>
+                    <ul class="service__list">
+                        <li class="service__list_item">
+                            <div class="service__list_item_icon"></div>
+                            <p class="service__list_item_text p">
+                                Покупка-продажа лошадей (выбор лошадей на любой бюджет как в России, так и за рубежом)
+                            </p>
+                        </li>
+                        <li class="service__list_item">
+                            <div class="service__list_item_icon"></div>
+                            <p class="service__list_item_text p">
+                                Ветеринарные услуги
+                            </p>
+                        </li>
+                        <li class="service__list_item">
+                            <div class="service__list_item_icon"></div>
+                            <p class="service__list_item_text p">
+                                Помощь в селекционном анализе (подборе производителей / маток)
+                            </p>
+                        </li>
+                        <li class="service__list_item">
+                            <div class="service__list_item_icon"></div>
+                            <p class="service__list_item_text p">
+                                Полное документарное сопровождение
+                            </p>
+                        </li>
+                        <li class="service__list_item">
+                            <div class="service__list_item_icon"></div>
+                            <p class="service__list_item_text p">
+                                Юридические услуги (проверка всех документов на всех этапах сделки)
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <div class="service__image">
+                        <img src="img/service/service-image.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
 <footer class="footer" id="footer">
 
