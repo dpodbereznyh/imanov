@@ -19,6 +19,11 @@
     }
   }
 }
+@include phones {
+  .section {
+    padding: 64px 0;
+  }
+}
 /*****End Section*****/
 
 /*****Header*****/
@@ -31,6 +36,7 @@
     justify-content: space-between;
     padding-top: 32px;
     margin-bottom: 200px;
+    position: relative;
   }
   &__contacts_item {
     display: flex;
@@ -110,6 +116,7 @@
   .header__wrap {
     margin-bottom: 84px;
     padding-top: 16px;
+    position: relative;
   }
   .header {
     padding-bottom: 120px;  
@@ -117,16 +124,6 @@
 }
 .main-nav {
   background: transparent;
-}
-
-@media (min-width: 768px) {
-  .main-nav {
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
-    border-radius: 50px;
-  }
 }
 .main-nav:after {
   clear: both;
@@ -228,13 +225,8 @@
 
 /* hide the menu in mobile view */
 
-#main-menu-state:not(:checked) ~ #main-menu {
-  display: none;
-}
 
-#main-menu-state:checked ~ #main-menu {
-  display: block;
-}
+
 
 @media (min-width: 768px) {
   /* hide the button in desktop view */
@@ -247,10 +239,29 @@
     display: block;
   }
 }
+@media screen and (max-width: 768px) {
+  #main-menu-state:not(:checked) ~ #main-menu {
+    display: none;
+    position: absolute;
+    top: 100px;
+  }
+  
+  #main-menu-state:checked ~ #main-menu {
+    display: block;
+    position: absolute;
+    top: 100px;
+    background: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    padding-bottom: 16px;
+    li {
+      border-bottom: .5px solid rgba(255, 255, 255, 0.2);
+    }
+  }
+}
 
 /*****Service*****/
 .service {
-  background: $dark;
+  background: $dark url(../img/service/service-image.jpg)no-repeat right/50% auto;
   &__title {
     color: $light;
   }
@@ -277,4 +288,356 @@
     height: 100%;
   }
 }
+@include desktop {
+  .service {
+    background: $dark;
+    padding: 64px 32px;
+  }
+}
+@include phones {
+  .service {
+    background: $dark;
+    padding: 16px;
+  }
+}
 /*****End Service*****/
+
+/*****About*****/
+.about {
+  display: flex;
+  background: url(../img/about/about-horse.png) no-repeat calc(50% + 691px) /auto 411px;
+  &__image {
+    width: 50%;
+    height: auto;
+  }
+  &__wrap {
+    width: 50%;
+  }
+  &__description {
+    padding: 64px 0 0 176px;
+  }
+  &__title {
+    margin-bottom: 48px;
+    color: $dark;
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 55px;
+      height: 2px;
+      background: $dark;
+      transform: translate(0px, 16px);
+    }
+  }
+  &__list {
+    max-width: 411px;
+  }
+  &__list_item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+    &:last-child {
+      margin-bottom: 32px;
+    }
+  }
+  &__list_item_icon {
+    min-width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: $default_d4;
+    margin-right: 32px;
+  }
+  &__list_item_text {
+    color: $dark;
+  }
+}
+@media screen and (max-width: 1310.5px) {
+  .about__description {
+    padding: 32px 0 0 80px;
+  }
+}
+@media screen and (max-width: 1170.5px) {
+  .about__description {
+    padding: 32px 0 0 50px;
+  }
+}
+@include laptop {
+  .about {
+    flex-direction: column;
+  }
+  .about__image {
+    width: 100%;
+  }
+  .about__wrap {
+    width: 100%;
+  }
+  .about__description {
+    width: 100%;
+    padding: 32px;
+  }
+  .about__list {
+    width: 100%;
+    max-width: unset;
+
+  }
+}
+@include phones {
+  .about__description {
+    padding: 16px;
+  }
+  .about__list_item_icon {
+    margin-right: 16px;
+  }
+}
+/*****End About*****/
+
+/*****Experience*****/
+.experience {
+  display: flex;
+  background: url(../img/experience/experience-horse.png) no-repeat calc(50% - 700px)/auto 300px;
+  &__image {
+    width: 50%;
+    height: auto;
+  }
+  &__wrap {
+    width: 50%;
+  }
+  &__description {
+    padding: 64px 135px 0 0;
+  }
+  &__title {
+    margin-bottom: 48px;
+    color: $dark;
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 55px;
+      height: 2px;
+      background: $dark;
+      transform: translate(0px, 16px);
+    }
+  }
+  &__list {
+    max-width: 441px;
+    margin-left: auto;
+    position: relative;
+  }
+  &__list_item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+    &:last-child {
+      margin-bottom: 32px;
+    }
+  }
+  &__list_item_icon {
+    min-width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: $default_d4;
+    margin-right: 32px;
+  }
+  &__list_item_text {
+    color: $dark;
+  }
+  &__list_item_text_link {
+    color: $dark;
+    transition: .35s;
+    &:hover {
+      color: $default_d1;
+      transition: .35s;
+    }
+  }
+}
+@include desktop {
+  .experience__description {
+    padding: 0 40px 0 32px;
+  }
+}
+@include laptop {
+  .experience {
+    flex-direction: column;
+  }
+  .experience__wrap {
+    width: 100%;
+    order: 2;
+  }
+  .experience__description {
+    padding: 32px;
+  }
+  .experience__list {
+    margin-left: 0;
+    max-width: unset;
+    width: 100%;
+  }
+  .experience__image {
+    width: 100%;
+    order: 1
+  }
+}
+@include phones {
+  .experience__list_item_icon {
+    margin-right: 16px;
+  }
+  .experience__description {
+    padding: 16px;
+  }
+}
+/*****End Experience*****/
+
+/*****Gallary*****/
+.gallary {
+  background: $dark;
+  &__title {
+    color: $light;
+    margin: 0 auto 48px;
+    &::after {
+      left: 50%;
+      transform: translate(-50%, 16px);
+    }
+  }
+  &__item {
+    margin-bottom: 32px;
+  }
+  &__item_image {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 16px;
+  }
+  &__item_caption {
+    color: $light;
+  }
+}
+/*****End Gallary*****/
+
+/*****Contacts*****/
+.contacts {
+  padding: 120px 0;
+  background: $dark url(../img/contacts/contacts-bg.jpg)no-repeat center center/cover;
+  &__title {
+    color: $dark;
+    margin-bottom: 48px;
+    &::after {
+      background: $dark;
+    }
+  }
+  &__list {
+    padding: 64px;
+    background: $default;
+    max-width: 491px;
+  }
+  &__list_item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__list_item_icon {
+    min-width: 15px;
+    height: 15px;
+    margin-right: 16px;
+  }
+   &__list_item_link {
+    color: $dark;
+    transition: .35s;
+    &:hover {
+      color: $default_d4;
+      transition: .35s;
+    }
+  }
+  &__list_item_address {
+    color: $dark
+  }
+}
+@include phones {
+  .contacts {
+    padding: 60px 0;
+  }
+  .contacts__list {
+    margin: 0 auto;
+    padding: 32px;
+  }
+}
+/*****End Contacts*****/
+
+/*****Footer*****/
+.footer {
+  padding: 32px 0;
+  &__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__copyright {
+    color: $dark;
+  }
+  &__developer {
+    color: $dark;
+  }
+  &__developer_link {
+    color: $dark;
+    transition: .35s;
+    &:hover {
+      color: $default;
+      transition: .35s;
+    }
+  }
+}
+@include phones {
+  .footer__wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__copyright {
+    margin-bottom: 16px;
+  }
+}
+/*****End Footer*****/
+
+/*****popup-form*****/
+#popup-form {
+  padding: 32px;
+}
+.popup-form {
+  max-width: 400px;
+}
+.popup-form-title {
+  margin-bottom: 32px;
+  text-align: center;
+}
+.popup-form-input {
+  width: 100%;
+  padding: 16px;
+  margin-bottom: 16px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.popup-form__btn {
+  color: $light;
+  background: $default_d4;
+  padding: 16px 32px;
+  transition: .35s;
+  border: none;
+  outline: none;
+  margin-top: 32px;
+  &:hover {
+    background: $default_d1;
+    transition: .35s;
+    color: $light;
+  }
+}
+@include phones {
+  #popup-form {
+    padding: 16px;
+  }
+}
+/*****End popup-form*****/

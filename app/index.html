@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ИП ИМАНОВ</title>
-    <link rel="icon" href="/img/header/header-logo.svg">
+    <link rel="icon" href="img/header/header-logo.svg">
     
     <link rel="stylesheet" href="css/main.min.css">
 </head>
@@ -23,17 +23,17 @@
                 </label>          
                 <ul id="main-menu" class="sm sm-clean">
                     <li>
-                        <a href="#" class="h4">
+                        <a href="#service" class="h4 yakor">
                             Услуги 
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="h4">
+                        <a href="#about" class="h4 yakor">
                             Обо мне 
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="h4">
+                        <a href="#contacts" class="h4 yakor">
                             Контакты 
                         </a>
                     </li>
@@ -57,11 +57,11 @@
         <h1 class="header__title">
             ИП ИМАНОВ -<br>ВАШ ГИД В КОННОЙ<br>ИНДУСТРИИ
         </h1>
-        <a href="#" class="header__btn h5">СВЯЗАТЬСЯ СО МНОЙ</a>
+        <a href="#" data-src="#popup-form" data-fancybox class="header__btn h5">СВЯЗАТЬСЯ СО МНОЙ</a>
     </div>
 </header>
 <main class="main">
-    <section class="section service">
+    <section class="section service" id="service">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-6">
@@ -101,18 +101,198 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-6">
+                <!--<div class="col-lg-6">
                     <div class="service__image">
                         <img src="img/service/service-image.jpg" alt="">
                     </div>
+                </div>-->
+            </div>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="about__image">
+            <img src="img/about/about-image.jpg" alt="">
+        </div>
+        <div class="about__wrap">
+            <div class="about__description">
+                <h2 class="about__title section__title h1">
+                    О СЕБЕ
+                </h2>
+                <ul class="about__list">
+                    <li class="about__list_item">
+                        <div class="about__list_item_icon"></div>
+                        <p class="about__list_item_text p">
+                            Генеральный директор промоутерской компании «ЮникорнЧеллендж»
+                        </p>
+                    </li>
+                    <li class="about__list_item">
+                        <div class="about__list_item_icon"></div>
+                        <p class="about__list_item_text p">
+                            Член Комитета по агропромышленному развитию Торгово-Промышленной Палаты РФ
+                        </p>
+                    </li>
+                    <li class="about__list_item">
+                        <div class="about__list_item_icon"></div>
+                        <p class="about__list_item_text p">
+                            Выпускник МГУ им. М. В.Ломоносова
+                        </p>
+                    </li>
+                    <li class="about__list_item">
+                        <div class="about__list_item_icon"></div>
+                        <p class="about__list_item_text p">
+                            Аспирант Финансового университета при Правительстве РФ
+                        </p>
+                    </li>
+                </ul>
+            </div>    
+        </div>
+    </section>
+    <section class="experience">
+        <div class="experience__wrap">
+            <div class="experience__description">
+                <ul class="experience__list">
+                    <h2 class="experience__title section__title h1">
+                        ОПЫТ РАБОТЫ
+                    </h2>
+                    <li class="experience__list_item">
+                        <div class="experience__list_item_icon"></div>
+                        <p class="experience__list_item_text p">
+                            Работа с ведущими отечественными и зарубежными специалистами, среди которых  можно выделить Сулейманова Оруджа Исмаиловича (главный регистратор чистокровной верховой породы), Полушкину Ольгу Павловну (мастер-тренер скаковых лошадей в РФ), Забегину Екатерину Федоровну (генеральный секретарь «конского ветеринарного объединения») , Нагихан Токмак (мастер-тренер скаковых лошадей в Турции) и другие
+                        </p>
+                    </li>
+                    <li class="experience__list_item">
+                        <div class="experience__list_item_icon"></div>
+                        <p class="experience__list_item_text p">
+                            С основными проектами можно ознакомиться  на сайте  <a href="https://unicornchallenge.com/" class="experience__list_item_text_link">unicornchallenge.com</a>
+                        </p>
+                    </li>                    
+                </ul>
+            </div>    
+        </div>
+        <div class="experience__image">
+            <img src="img/experience/experience-image.jpg" alt="">
+        </div>        
+    </section>
+    <section class="section gallary">
+        <div class="container-fluid">
+            <h2 class="section__title h2 gallary__title">
+                ФОТОГАЛЕРЕЯ
+            </h2>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="gallary__item">
+                        <a href="img/gallary/gallary-image-1.jpg" class="gallary__item_image" data-fancybox="images" data-caption="«Организация выставки картин и клубного заседания с партнерами в Королевском Люксе гостиницы Лотте Плаза 24.04.2019»">
+                            <img src="img/gallary/gallary-image-1.jpg" alt="">
+                        </a>
+                        <p class="gallary__item_caption p">
+                            «Организация выставки картин и клубного заседания с партнерами в Королевском Люксе гостиницы Лотте Плаза 24.04.2019»
+                        </p>
+                    </div>                    
+                </div>
+                <div class="col-sm-6">
+                    <div class="gallary__item">
+                        <a href="img/gallary/gallary-image-2.jpg" class="gallary__item_image" data-fancybox="images" data-caption="Организация и проведение Закрытия Скакового сезона 2018г. на Пятигорском Ипподроме 29.09.2018">
+                            <img src="img/gallary/gallary-image-2.jpg" alt="">
+                        </a>
+                        <p class="gallary__item_caption p">
+                            Организация и проведение Закрытия Скакового сезона 2018г. на Пятигорском Ипподроме 29.09.2018
+                        </p>
+                    </div>                    
+                </div>
+                <div class="col-sm-6">
+                    <div class="gallary__item">
+                        <a href="img/gallary/gallary-image-3.jpg" class="gallary__item_image" data-fancybox="images" data-caption="Проведение совместного мероприятия с АО «Россипподромы» в честь 185-го юбилейного открытия скакового сезона 05.05.2019">
+                            <img src="img/gallary/gallary-image-3.jpg" alt="">
+                        </a>
+                        <p class="gallary__item_caption p">
+                            Проведение совместного мероприятия с АО «Россипподромы» в честь 185-го юбилейного открытия скакового сезона 05.05.2019
+                        </p>
+                    </div>                    
+                </div>
+                <div class="col-sm-6">
+                    <div class="gallary__item">
+                        <a href="img/gallary/gallary-image-4.jpg" class="gallary__item_image" data-fancybox="images" data-caption="Проведение совместного мероприятия с АО «Россипподромы» в честь 185-го юбилейного открытия скакового сезона 05.05.2019">
+                            <img src="img/gallary/gallary-image-4.jpg" alt="">
+                        </a>
+                        <p class="gallary__item_caption p">
+                            Проведение совместного мероприятия с АО «Россипподромы» в честь 185-го юбилейного открытия скакового сезона 05.05.2019
+                        </p>
+                    </div>                    
                 </div>
             </div>
         </div>
     </section>
+    <section class="contacts" id="contacts">
+        <div class="container-fluid">
+            <ul class="contacts__list">
+                <h2 class="section__title h2 contacts__title">
+                    КОНТАКТЫ
+                </h2>
+                <li class="contacts__list_item">
+                    <div class="contacts__list_item_icon">
+                        <img src="img/contacts/contacts-phone-icon.svg" alt="">
+                    </div>
+                    <a href="tel:+79042550000" class="contacts__list_item_link strong">8 (904) 255-0000 </a>
+                </li>
+                <li class="contacts__list_item">
+                    <div class="contacts__list_item_icon">
+                        <img src="img/contacts/contacts-phone-icon.svg" alt="">
+                    </div>
+                    <a href="tel:+79042550001" class="contacts__list_item_link strong">8 (904) 255-0001</a>
+                </li>
+                <li class="contacts__list_item">
+                    <div class="contacts__list_item_icon">
+                        <img src="img/contacts/contacts-envelope-icon.svg" alt="">
+                    </div>
+                    <a href="mailto:79042550000@yandex.ru" class="contacts__list_item_link strong">79042550000@yandex.ru</a>
+                </li>
+                <li class="contacts__list_item">
+                    <div class="contacts__list_item_icon">
+                        <img src="img/contacts/contacts-location-icon.svg" alt="">
+                    </div>
+                    <p class="strong contacts__list_item_address">
+                        г. Владимир, ул. Б. Нижегородская, 36
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
 </main>
 <footer class="footer" id="footer">
-
+    <div class="container-fluid">
+        <div class="footer__wrap">
+            <p class="footer__copyright very-small">
+                2020, Прагматика
+            </p>
+            <p class="footer__developer very-small">
+                Создание и разработка <a href="https://apimedia.ru/" target="_blank" class="footer__developer_link very-small"> Api Media</a>
+            </p>
+        </div>
+    </div>
 </footer>
+<div class="d-none">
+        <form id="popup-form">
+            <div class="popup-form">
+                <p class="popup-form-title h2">Связаться со мной</p>
+                <input class="popup-form-input" type="text" placeholder="Имя" name="name">
+                <input class="popup-form-input" type="tel" placeholder="Телефон" name="phone" required>
+                <input class="popup-form-input" type="email" placeholder="Почта" name="email" required>
+                <div class="d-flex justify-content-center mt-4">
+                    <button type="submit" class="popup-form__btn btn">Отправить</button>
+                </div>
+                <!--<label class="footer__form_label">
+                    <input type="checkbox" class="footer__form_checkbox" checked required>
+                    <span class="footer__form_checkbox-span"></span>
+                    <span class="small popup-form_label_link footer__form_label_link-popup">
+                    Даю согласие на обработку персональных данных
+                </span>
+                </label>-->
+            </div>
+        </form>
+        <div id="fancyalert" class="fancyalert">
+            <div class="fancyalert-text">Спасибо за заявку,<br> в ближайшее время с Вами свяжутся!</div>
+        </div>
+    </div>
 
 <script src="js/scripts.min.js"></script>
 
