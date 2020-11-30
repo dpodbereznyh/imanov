@@ -40,7 +40,7 @@ gulp.task('scripts', function() {
         // Without JQuery dependensies
         // JQuery dependent
         // 'app/js/vendors/bootstrap.min.js',
-        'app/js/vendors/jquery-3.4.1.js',
+        'app/js/vendors/jquery-3.5.1.min.js',
         'app/js/vendors/jquery.smartmenus.js',
         'app/js/vendors/swiper.min.js',
         'app/js/vendors/jquery.fancybox.min.js',

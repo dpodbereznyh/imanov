@@ -352,6 +352,14 @@
   &__list_item_text {
     color: $dark;
   }
+  &__list_item_text_link {
+    color: $dark;
+    transition: .35s;
+    &:hover {
+      color: $default;
+      transition: .35s;
+    }
+  }
 }
 @media screen and (max-width: 1310.5px) {
   .about__description {
