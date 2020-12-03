@@ -575,6 +575,9 @@
     color: $dark
   }
 }
+.icon-moon {
+  color: $default_d4;
+}
 @include phones {
   .contacts {
     padding: 60px 0;
